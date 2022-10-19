@@ -1,0 +1,126 @@
+
+.features-2 {
+    position: relative;
+    background-image: radial-gradient(91.09% 156.13% at 21.37% 57.27%, #B77438 0.52%, #9A5A28 38.54%, #642A0C 100%);
+}
+.features-2__container {
+    padding-bottom: 479px;
+    padding-top: 146px;
+}
+.features-2__title{
+    color: #E9D4B4;
+    margin: 0 0 0 360px;
+    font-size: 34px;
+    line-height: 42px;
+    position: relative;
+
+}
+.features-2__list {
+    background-color: rgba(92, 41, 16, 1);
+    position: relative;
+    width: 700px;
+    padding: 18px 23px 22px 162px;
+    font-size: 19px;
+    line-height: 37px;
+    margin-left: auto;
+    margin-right: 0;
+    box-sizing: border-box;
+    margin-top: 30px;
+    color: #E9D4B4;
+}
+
+.features-2__img-container {
+    position: absolute;
+    display: inline-block;
+    bottom:135px;
+}
+
+.features-2__img * {
+    display: block;
+}
+
+.features-2__img {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.features-2__img span{
+    color: #E9D4B4;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+}
+
+.features-2__block-list.list li:before {
+    width: 1.2em;
+    height: 1.2em;
+    top: 4px;
+    left: -10px;
+}
+
+@media (max-width: 1060px){
+
+    .features-2__block-list.list li:before {
+        width: 1.2em;
+        height: 0.8em;
+        top: 4px;
+        left: -10px;
+    }
+
+    .features-2__title {
+        margin: 0 20rem 0 4rem;
+        font-size: 6rem;
+        display: block;
+        font-weight: 500;
+        line-height: 7rem;
+    }
+
+    .features-2__list {
+        width: auto;
+        margin-right: 5rem;
+        margin-top: 9rem;
+        padding: 8rem 11rem 11rem 4rem;
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+
+    .features-2__container{
+        padding-bottom: 105rem;
+        padding-top: 20rem;
+    }
+
+    .features-2__img-container {
+        display: inline-flex;
+        bottom: 33rem;
+        flex-flow: row-reverse nowrap;
+        align-items: baseline;
+        justify-content: center;
+        width: 100rem;
+        padding-inline: 2rem;
+        box-sizing: border-box;
+    }
+
+    .features-2__img *{
+        display: block;
+        width: 100%;
+    }
+
+    .features-2__img {
+        margin: 0;
+        width: 20rem;
+        padding: 2rem;
+        flex-flow: row wrap;
+        display: flex;
+    }
+
+    .features-2__img-container span {
+        font-family: 'Oswald', serif;
+        font-size: 3rem;
+        line-height: 4rem;
+        font-weight: 700;
+    }
+
+    .features-2__block-list.list li {
+        padding-bottom: 2rem;
+    }
+}

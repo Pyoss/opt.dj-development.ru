@@ -1,0 +1,114 @@
+.opt-catalog__container {
+    padding-bottom: 61px;
+}
+
+
+.opt-catalog__title {
+    text-align: center;
+    margin: 65px 0;
+}
+
+.catalog-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+    gap: 16px 32px;
+}
+
+.catalog-list__item-img {
+    position:absolute;
+    max-height: 150px;
+    bottom: 20px;
+    right: 20px;
+}
+
+.catalog-list__item-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    text-transform: uppercase;
+    display: block;
+    z-index: 1;
+    position: absolute;
+    width: 180px;
+    bottom: 15px;
+    color: black;
+}
+
+.catalog-list__item {
+    position: relative;
+    padding: 15px 25px;
+    background: #CDC9C9;
+    width: 337px;
+    height: 192px;
+    box-sizing: border-box;
+}
+
+.catalog-list__item:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    right: 20px;
+    bottom: 17px;
+    background-color: white;
+    height: 160px;
+    width: 160px;
+    border-radius: 80px;
+}
+
+.brands-list {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 1080px){
+    .catalog-list {
+        width: auto;
+        flex-flow: row nowrap;
+        overflow: scroll;
+        padding: 0 40px;
+        gap: 64px;
+    }
+
+    .catalog-list__item-img {
+        max-height: 300px;
+        bottom: 40px;
+        right: 40px;
+        height: 100%;
+    }
+
+    .catalog-list__item-name {
+        font-size: 34px;
+        line-height: 42px;
+        width: 400px;
+        bottom: 30px;
+    }
+
+    .catalog-list__item {
+        padding: 30px 50px;
+        width: 674px;
+        height: 380px;
+        border-radius: 20px;
+    }
+
+    .catalog-list__item:before {
+        right: 40px;
+        bottom: 34px;
+        height: 320px;
+        width: 320px;
+        border-radius: 160px;
+    }
+
+    .brands-list {
+        flex-flow: row wrap;
+        padding: 0 40px;
+        gap: 40px 20px;
+        justify-content: space-around;
+    }
+
+    .brands-list__item {
+        min-height: 60px;
+    }
+}

@@ -1,0 +1,116 @@
+.img-block3 {
+    padding-top: 60px;
+}
+
+.img-block3__container {
+    position: relative;
+}
+
+.img-block3__img {
+    position: absolute;
+    top: 74px;
+    left: 599px;
+}
+
+
+.img-block3__list {
+    background-color: rgba(43, 8, 0, 0.7);
+    padding: 30px 40px 42px 33px;
+    font-size: 20px;
+    line-height: 33px;
+    width: 490px;
+    box-sizing: border-box;
+    margin: 43px 0 0 0;
+    color: #E9D4B4;
+}
+.list.img-block3__list li {
+    padding-bottom: 20px;
+}
+
+.img-block3__title {
+    font-size: 42px;
+    line-height: 45px;
+    font-weight: 500;
+    color: #E9D4B4;
+}
+
+.img-block3__list.list li {
+    margin-left: 25px;
+    padding-left: 45px;
+}
+
+.img-block3__list.list li:before{
+    width: 1.1em;
+    height: 1.1em;
+    top: 2px;
+}
+
+.img-block3__list.list li:last-child {
+    list-style: none;
+    font-size: 25px;
+    line-height: 40px;
+    margin-top: 29px;
+    margin-left: -14px;
+    padding-bottom: 0;
+}
+
+.img-block3__list.list li:last-child:before {
+    background: none;
+}
+
+.img-block3__img {
+    position: absolute;
+    top: 225px;
+    left: 599px;
+    width: 462px;
+    height: 591px;
+}
+
+@media (max-width: 1060px) {
+    .img-block3 {
+        padding-top: 42rem;
+        padding-bottom: 35rem;
+    }
+
+    .img-block3__list {
+        padding: 8.5rem 5rem 9rem 0;
+        font-size: 4rem;
+        line-height: 5.6rem;
+        width: 71rem;
+        margin: 6.8rem 0 0 0;
+    }
+
+    .img-block3__list.list li {
+        /* margin-left: 5.2rem; */
+        padding-left: 7rem;
+    }
+
+    .img-block3__list li:last-child {
+        display: none;
+    }
+
+    .img-block3__img {
+        position: absolute;
+        top: 77rem;
+        left: 45rem;
+        width: 53.6rem;
+        height: 68rem;
+    }
+
+    .img-block3__title {
+        font-size: 5.6rem;
+        line-height: 6rem;
+        margin-left: 5rem;
+    }
+
+    .img-block3__list.list li:before{
+        width: 1.1em;
+        height: 0.8em;
+        top: 2px;
+    }
+
+    .img-block3__list li:nth-child(2),
+    .img-block3__list li:nth-child(3) {
+        padding-right: 21.4rem;
+    }
+}

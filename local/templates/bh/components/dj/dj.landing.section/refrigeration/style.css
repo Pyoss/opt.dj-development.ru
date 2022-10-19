@@ -1,0 +1,195 @@
+.refrigeration {
+    padding-top: 52px;
+    padding-bottom: 85px;
+    background-image :radial-gradient(62.51% 97.93% at 65.89% 64.57%, #B77438 0%, #9A5A28 25%, #642A0C 100%);
+}
+
+.refrigeration__container{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: stretch;
+    overflow: hidden;
+}
+.refrigeration__list-container {
+    flex-grow: 1;
+}
+.refrigeration__img-container{
+    width: 571px;
+}
+
+.refrigeration__title {
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 45px;
+}
+
+.refrigeration-list.list {
+    background-color: rgba(35, 10, 5, 0.8);
+    padding: 28px 0 45px 33px;
+    margin-top: 33px;
+}
+
+.refrigeration-list.list li {
+    font-size: 20px;
+    line-height: 33px;
+    padding-left: 34px;
+}
+
+.refrigeration-list li:not(li:last-child) {
+    padding-bottom: 20px;
+}
+
+.refrigeration__img-container {
+    height: 635px;
+    background-color: #EAD6B7;
+    color: #521001;
+    position: relative;
+}
+
+.refrigeration__img-container figure{
+    position: absolute;
+    margin: 0;
+}
+
+
+.refrigeration__img-container .refrigeration__fridge {
+    top: 53px;
+    left: 93px;
+}
+
+.refrigeration__img-container .refrigeration__fridge figcaption{
+    position: absolute;
+    top: -19px;
+    left: 300px;
+}
+
+.refrigeration__img-container .refrigeration__fridge img {
+    width: 464px;
+    height: 364px;
+}
+
+
+.refrigeration__img-container .refrigeration__defleg {
+    top: 288px;
+    left: 53px;
+}
+
+.refrigeration__img-container .refrigeration__defleg figcaption{
+    position: absolute;
+    bottom: -68px;
+    left: -12px;
+}
+
+.refrigeration__img-container .refrigeration__defleg img {
+    width: 308px;
+    height: 250px;
+}
+
+.refrigeration__img-container figcaption{
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 30px;
+    color: #B77438;
+}
+
+.refrigeration__img-container figcaption span{
+    color: #521001;
+}
+
+@media (max-width: 1060px) {
+    .refrigeration {
+        padding: 47.5rem 0 0 0;
+        height: 188rem;
+    }
+
+    .refrigeration__container{
+        display: block;
+    }
+
+    .refrigeration__img-container{
+        width: 100rem;
+    }
+
+    .refrigeration__title {
+        font-weight: 500;
+        font-size: 6rem;
+        line-height: 7.3rem;
+        margin-left: 5rem;
+        display: block;
+    }
+
+    .refrigeration-list.list {
+        padding: 8.2rem 8.2rem 17.5rem 5rem;
+        margin-top: -2.6rem;
+        width: 92rem;
+        box-sizing: border-box;
+        position: relative;
+        bottom: -9.6rem;
+        z-index: 1;
+    }
+
+    .refrigeration-list.list li {
+        font-size: 4rem;
+        line-height: 4.6rem;
+        padding-left: 6rem;
+    }
+
+    .refrigeration-list.list li:before {
+        height: 3.7rem;
+        top: 7px;
+    }
+
+    .refrigeration-list li:not(li:last-child) {
+        padding-bottom: 4rem;
+    }
+
+    .refrigeration__img-container {
+        height: 119rem;
+    }
+
+    .refrigeration__img-container figure{
+        position: absolute;
+        margin: 0;
+    }
+
+
+    .refrigeration__img-container .refrigeration__fridge {
+        top: 13rem;
+        left: 15rem;
+    }
+
+    .refrigeration__img-container .refrigeration__fridge figcaption{
+        position: absolute;
+        top: 1.6rem;
+        left: 50rem;
+    }
+
+    .refrigeration__img-container .refrigeration__fridge img {
+        width: 78rem;
+        height: 65.5rem;
+    }
+
+
+    .refrigeration__img-container .refrigeration__defleg {
+        top: 62.3rem;
+        left: 21rem;
+    }
+
+    .refrigeration__img-container .refrigeration__defleg figcaption{
+        position: absolute;
+        bottom: -2rem;
+        left: -16rem;
+    }
+
+    .refrigeration__img-container .refrigeration__defleg img {
+        width: 55.2rem;
+        height: 44.8rem;
+    }
+
+    .refrigeration__img-container figcaption{
+        font-size: 3.6rem;
+        line-height: 5.4rem;
+    }
+
+
+}

@@ -1,0 +1,62 @@
+.utp {
+    background-color: #25231F;
+}
+
+.utp__background {
+    height: 545px;
+    background-size: 1920px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.utp__container {
+    padding-top: 55px;
+    position: relative;
+}
+
+.utp__title {
+    color: white;
+}
+
+.utp__feature {
+    display: block;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    width: 170px;
+}
+
+.utp__feature--1 {
+    top: 400px;
+}
+
+.utp__feature--2 {
+    left: 103px;
+    top: 218px;
+}
+
+.utp__feature--3 {
+    top: 400px;
+    left: 290px;
+}
+
+.utp__feature--4 {
+    left: 411px;
+    top: 170px;
+}
+
+.utp__feature--5 {
+    left: 585px;
+    top: 400px;
+}
+
+.utp__feature--6 {
+    left: 718px;
+    top: 200px;
+}
+
+.utp__feature--7 {
+    left: 880px;
+    top: 400px;
+}
+

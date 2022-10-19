@@ -1,0 +1,250 @@
+
+.sale {
+    position: relative;
+    background-size: 2610px, cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 780px;
+}
+
+.sale-360 {
+    position: absolute;
+    width: 1060px;
+    margin: auto;
+    height: 100%;
+    top: 41px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+*.sale-360__button {
+    display: block;
+    margin-left: auto;
+    margin-bottom: 27px;
+    border-radius: 18px;
+}
+
+.sale-360__image-container {
+    max-width: 604px;
+    min-width: 604px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 0;
+    position: absolute;
+    left: 482px;
+    top: -30px;
+}
+
+.sale-360__image-container img {
+    width: 100%;
+    cursor: move;
+}
+
+#rotation img {
+    width: 100%;
+    cursor: move;
+
+}
+
+
+.sale-slider .owl-nav {
+    position: absolute;
+    top: 80%;
+    width: 1200px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    font-size: 120px;
+    color: #EAD6B7;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sale-container {
+    position: relative;
+    height: 780px;
+}
+
+.sale-container__block.bottom {
+    position: absolute;
+    bottom: 0;
+    padding-top: 24px;
+    /* left: 0; */
+}
+
+.sale-container__block {
+    background-color: rgba(100, 42, 12, 0.8);
+    width: 494px;
+    position: absolute;
+    padding-left: 39px;
+    padding-right: 80px;
+    padding-top: 35px;
+    box-sizing: border-box;
+    /* padding-bottom: 20px; */
+}
+
+.sale-container__title {
+    font-weight: 600;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+span.sale-container__title--main {
+    font-size: 31px;
+}
+
+span.sale-container__title--comment {
+    font-size: 16px;
+}
+
+.sale-container__feature {
+    font-size: 72px;
+    line-height: 79px;
+    text-transform: uppercase;
+    margin-top: 18px;
+    margin-bottom: 42px;
+    color: white;
+}
+
+.list li.sale-container__feature-item {
+    font-size: 20px;
+    padding-left: 2em;
+    padding-bottom: 15px;
+}
+
+.list li.sale-container__feature-item:before {
+    width: 1em;
+    top: -4px;
+    height: 1.2em;
+}
+
+.sale-container__block.top {
+    padding-bottom: 30px;
+}
+
+.bottom .sale-container__title {
+    font-weight: 800;
+    font-size: 31px;
+    margin-bottom: 26px;
+}
+
+.sale-360__logo {
+    position: absolute;
+    left: 580px;
+}
+
+@media (max-width: 1060px) {
+    .sale {
+        /* z-index: -1; */
+        background-size: cover;
+        height: 154em;
+        margin-top: -15rem;
+        /* padding-top: 15rem; */
+    }
+
+    .sale-360 {
+        /* display: none; */
+        width: 40rem;
+        overflow: hidden;
+        /* margin-left: auto; */
+        right: 0;
+        left: unset;
+        margin: 0;
+    }
+
+    .sale-container__block.bottom {
+        position: absolute;
+        bottom: 0;
+        padding-top: 5rem;
+        padding-bottom: 7rem;
+        /* left: 0; */
+    }
+
+    .sale-container__block {
+        /* background-color: rgba(100, 42, 12, 1); */
+        width: 60.4rem;
+        /* position: absolute; */
+        padding-left: 4rem;
+        padding-right: 3rem;
+        padding-top: 4rem;
+        box-sizing: border-box;
+        padding-bottom: 8rem;
+    }
+
+    .sale-container__title {
+        /* font-weight: 600; */
+        font-size: 4rem;
+        line-height: 5rem;
+        /* text-transform: uppercase; */
+    }
+
+    span.sale-container__title--main {
+        font-size: 4rem;
+    }
+
+    span.sale-container__title--comment {
+        font-size: 3rem;
+    }
+
+    .sale-container__feature {
+        font-size: 9.8rem;
+        line-height: 10rem;
+        text-transform: uppercase;
+        margin-top: 4rem;
+        margin-bottom: 5rem;
+    }
+
+    .list li.sale-container__feature-item {
+        font-size: 4rem;
+        padding-left: 1.2em;
+        padding-bottom: 15px;
+    }
+
+    .list li.sale-container__feature-item:before {
+        width: .8em;
+        top: 7px;
+        height: .8em;
+    }
+
+    .sale-container__block.top {
+        padding-bottom: 6rem;
+        top: 15rem;
+    }
+
+    .bottom .sale-container__title {
+        /* font-weight: 800; */
+        font-size: 6.8rem;
+        margin-bottom: 6rem;
+    }
+
+
+    .sale-container {
+        position: relative;
+        height: 154rem;
+    }
+
+    .sale-360__image-container {
+        max-width: 90rem;
+        min-width: 91rem;
+        overflow: hidden;
+        margin: 0 auto;
+        padding: 0;
+        position: absolute;
+        left: -27rem;
+        top: 18rem;
+    }
+
+    .sale-360__image-container img {
+        width: 100%;
+        cursor: move;
+    }
+
+    .sale-360__logo {
+        left: 13rem;
+        top: 14rem;
+        height: 14rem;
+    }
+
+}
