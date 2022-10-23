@@ -1,0 +1,23 @@
+.mobile-carousel__list {
+    display: grid;
+    grid-template-columns: min-content min-content min-content min-content;
+    justify-content: space-around;
+    row-gap: 2rem;
+    padding-top: 5rem;
+}
+
+img.mobile-carousel__list-image {
+    width: 21rem;
+    height: 14rem;
+}
+
+.mobile-carousel__main-image {
+    width: 92rem;
+    height: 58rem;
+}
+
+.mobile-carousel__container.container {
+    padding: 9rem 4rem;
+    background-color: #25231f;
+    box-sizing: border-box;
+}

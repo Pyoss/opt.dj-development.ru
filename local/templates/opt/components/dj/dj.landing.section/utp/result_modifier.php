@@ -13,7 +13,7 @@ use DJScripts\ImgRef;
 
 $is_mobile = isMobile();
 if($is_mobile){
-    $size_array =  array('width' => 450, 'height' => 450);
+    $size_array =  array('width' => 800, 'height' => 1000);
 } else {
     $size_array =  array('width' => 1920, 'height' => 1920);
 }

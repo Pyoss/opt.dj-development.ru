@@ -20,3 +20,13 @@ $arTemplateParameters['SECTION_BACKGROUND_MOBILE'] = array(
     "FD_USE_MEDIALIB" => true,
     "FD_MEDIALIB_TYPES" => Array('image')
 );
+
+$arTemplateParameters['SECTION_LOGO'] = array(
+    "NAME" => 'Логотип секции',
+    "TYPE" => "FILE",
+    "FD_TARGET" => "F",
+    "FD_EXT" => array('png', 'jpg', 'jpeg', 'gif'),
+    "FD_UPLOAD" => true,
+    "FD_USE_MEDIALIB" => true,
+    "FD_MEDIALIB_TYPES" => Array('image')
+);

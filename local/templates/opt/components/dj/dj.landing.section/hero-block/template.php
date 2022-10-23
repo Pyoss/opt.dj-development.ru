@@ -5,8 +5,8 @@
  * @var array $arResult
  **/
 ?>
-<section id="hero-block" class="hero-block">
-    <video autoplay muted loop id="hero-video">
+<section id="hero-block" class="hero-block desktop">
+    <video  autoplay loop muted playsinline id="hero-video">
         <source src="/upload/src/video/opt-video.mp4" type="video/mp4">
     </video>
     <div class="hero-block__container container">
@@ -32,10 +32,6 @@
                 </div>
             </form>
         </div>
-        <div class="main-text mobile">
-            <span class="main-text__title">Производственная компания</span><br>
-            <img src="<?=$arResult['logo']?>" class="main-text__logo">
 
-        </div>
     </div>
 </section>

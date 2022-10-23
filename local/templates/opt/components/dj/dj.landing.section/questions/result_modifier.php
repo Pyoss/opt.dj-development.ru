@@ -8,6 +8,7 @@
  * @var string $templateName
  * @var string $componentPath
  **/
+CModule::IncludeModule('dj.imgref');
 
 use DJScripts\ImgRef;
 

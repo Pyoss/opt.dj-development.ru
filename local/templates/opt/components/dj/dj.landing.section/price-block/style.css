@@ -1,0 +1,112 @@
+.price-block__container.container {
+    width: auto;
+    background-color: rgba(255, 255, 255, .6);
+    border-radius: 4rem;
+}
+
+.price-block {
+    background-color: orange;
+    padding: 8rem 7rem 11rem 9rem;
+    box-sizing: border-box;
+    background-size: cover;
+}
+
+.price-block__form {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 5rem 3rem 7rem 3rem;
+    gap: 3rem;
+}
+
+.price-block__comment {
+    font-size: 4.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.price-block__input {
+    background-color: transparent;
+    border-style: solid;
+    border-width: .4rem;
+    border-color: black;
+    border-radius: 3rem;
+    font-size: 4.4rem;
+    padding: 2rem 6rem;
+}
+
+.price-block__input.tel-mask {
+    text-align: center;
+}
+
+.price-block__button.opt-button {
+    width: 100%;
+    height: unset;
+    border: none;
+    background-color: var(--main-dj-color);
+    color: white;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    padding: 2rem 0;
+    font-size: 4rem;
+}
+
+span.main-text__text{
+    color: white;
+    font-size: 4.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 3rem 0;
+    display: block;
+}
+
+
+
+span.main-text__text{
+    color: black;
+    font-size: 4.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 3rem 0;
+    display: block;
+}
+
+.main-text__list {
+    list-style-type: square;
+}
+
+.main-text__list li{
+    text-align: left;
+    color: white;
+    text-transform: uppercase;
+    font-size: 4rem;
+    line-height: 7rem;
+}
+
+.main-text__list {
+    list-style-type: square;
+}
+
+.main-text__list li{
+    text-align: left;
+    color: black;
+    text-transform: uppercase;
+    font-size: 4rem;
+    line-height: 7rem;
+}
+
+.main-text.mobile {
+    width: 85rem;
+    background-color: rgba(255, 255, 255, .6);
+    text-align: center;
+    padding: 3rem;
+    box-sizing: border-box;
+    border-radius: 4rem;
+    margin-bottom: 5rem;
+}
+
+.main-text__title {
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+}

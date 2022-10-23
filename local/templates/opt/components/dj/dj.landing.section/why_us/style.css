@@ -50,47 +50,81 @@ img.why__feature-icon {
     row-gap: 30px;
 }
 
-@media(max-width: 1360px) {
+@media(max-width: 1080px) {
+
+    .why__title.container {
+        margin: 8rem auto;
+    }
+
+    .why__title {
+        margin: 0;
+        text-align: center;
+    }
+
     .why__features > div {
-        min-width: 45%;
+        min-width: unset;
+    }
+
+    .why__feature:nth-child(1) .why__feature-background,
+    .why__feature:nth-child(6) .why__feature-background
+    {
+        width: 73rem;
+        height: 73rem;
+    }
+
+    .why__feature:nth-child(3),
+    .why__feature:nth-child(5)
+    {
+        margin-left: -10rem
     }
 
     .why__feature-background {
-        width: 450px;
-        height: 450px;
+        width: 53rem;
+        height: 53rem;
     }
 
     .why__text-container {
         position: absolute;
-        top: 268px;
+        top: 30rem;
         text-align: left;
     }
 
+    .why__feature:first-child .why__text-container,
+    .why__feature:last-child .why__text-container{
+        top: 43rem;
+    }
+
     .why__feature-text {
-        width: 427px;
-        height: 206px;
-        font-size: 28px;
+        width: 47rem;
+        height: 20rem;
+        font-size: 3rem;
         color: white;
     }
 
-    .why__feature-text:before {
-        content: "";
-        float: left;
-        width: 55%;
-        height: 100%;
-        shape-outside: polygon(50% 0, 50% 100%, 100% 100%);
+    .why__feature:first-child .why__feature-text,
+    .why__feature:last-child .why__feature-text{
+        width: 70rem;
+        height: 40rem;
+        font-size: 4rem;
     }
 
     img.why__feature-icon {
         transform: translateX(-50%);
         position: absolute;
-        top: 80px;
-        left: 171px;
-        height: 100px;
+        top: 10rem;
+        left: 20rem;
+        height: 10rem;
+    }
+
+    .why__feature:first-child .why__feature-icon,
+    .why__feature:last-child .why__feature-icon{
+        top: 14rem;
+        left: 28rem;
+        height: 15rem;
     }
 
     .why__features {
-        margin-bottom: 60px;
-        row-gap: 30px;
+        margin-bottom: 7rem;
+        row-gap: 10rem;
     }
 }

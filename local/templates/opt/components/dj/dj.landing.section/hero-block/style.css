@@ -74,21 +74,6 @@ section#hero-block {
     transform: translate(-50%, -50%);
     min-width: 1600px;
 }
-.main-text.mobile {
-    width: 800px;
-    margin: auto;
-    text-align: center;
-}
-
-img.main-text__logo {
-    height: 100px;
-}
-
-.main-text__title {
-    color: white;
-    font-size: 30px;
-    line-height: 82px;
-}
 
 @media (max-width: 1080px){
     section#hero-block {
@@ -96,10 +81,4 @@ img.main-text__logo {
         margin: 0;
     }
 
-    .hero-block__container {
-        height: 800px;
-        background-color: #000000aa;
-        position: relative;
-        z-index: 1;
-    }
 }

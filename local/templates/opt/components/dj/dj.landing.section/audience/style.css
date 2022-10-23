@@ -24,33 +24,29 @@ section#audience {background-color: var(--main-dj-color);}
     }
 
     .audience__container.container {
-        padding: 80px 0;
+        padding: 10rem 0;
     }
 
     .audience__title {
-        margin-bottom: 85px;
+        margin-bottom: 11rem;
     }
 
     .audience__platforms {
+        column-gap: 10rem;
+        row-gap: 10rem;
         flex-flow: row wrap;
-        column-gap: 30px;
-        row-gap: 120px;
     }
 
     .audience__platform {
-        width: 40%;
-    }
-
-    .audience__platform:first-child {
-        width: 80%;
+        min-width: 22rem;
     }
 
     .audience__platform-img {
-        height: 180px;
+        height: 10rem;
     }
 
     .audience__platform:first-child .audience__platform-img {
-        height: 100px;
+        height: 6rem;
     }
 
     .audience__platform-img img {
@@ -58,8 +54,7 @@ section#audience {background-color: var(--main-dj-color);}
     }
 
     .audience__platform-text {
-        margin-top: 40px;
-        font-size: 45px;
-        font-weight: 500;
+        margin-top: 2rem;
+        font-size: 3rem;
     }
 }

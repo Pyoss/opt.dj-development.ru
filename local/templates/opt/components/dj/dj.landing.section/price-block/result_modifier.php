@@ -16,9 +16,9 @@ use DJScripts\ImgRef;
 
 $is_mobile = isMobile();
 if($is_mobile){
-    $size_array =  array('width' => 1460, 'height' => 1460);
+    $size_array =  array('width' => 800, 'height' => 1000);
 } else {
-    $size_array =  array('width' => 3820, 'height' => 3820);
+    $size_array =  array('width' => 1920, 'height' => 1920);
 }
 
 if ($is_mobile){
@@ -26,4 +26,5 @@ if ($is_mobile){
 } else {
     $background_img = ImgRef::optimizeImg(getFileId($arParams['SECTION_BACKGROUND']), $size_array);
 }
+$logo = ImgRef::optimizeImg(getFileId($arParams['SECTION_LOGO']), array('width' => 279, 'height' => 55));
 $arResult['background_img'] = $background_img['auto'];

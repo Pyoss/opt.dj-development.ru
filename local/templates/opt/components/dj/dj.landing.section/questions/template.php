@@ -5,7 +5,7 @@
  * @var array $arResult
  **/
 ?>
-<section id="questions" class="questions desktop" style="background-image: url(<?=$arResult['background_img']?>)">
+<section id="questions" class="questions" style="background-image: url(<?=$arResult['background_img']?>)">
     <div class="questions__container container">
         <div class="questions__container-left">
             <div class="questions__title">

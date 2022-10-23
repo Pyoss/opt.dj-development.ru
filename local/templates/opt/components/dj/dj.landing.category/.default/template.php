@@ -13,7 +13,7 @@
 
         </div>
         <div class="category__text"><?=$arResult['CATEGORY']['DESCRIPTION']?></div>
-        <div class="category__form desktop">
+        <div class="category__form">
             <div class="category__form-action">
                 Заполните форму и получите прайс-лист:
             </div>

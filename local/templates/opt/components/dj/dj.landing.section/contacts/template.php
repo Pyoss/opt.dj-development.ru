@@ -9,7 +9,7 @@
     <div class="contacts-block__container container">
         <div class="contacts__column contacts__column-contacts">
             <div class="contacts__title">
-                <span>Контакты: Добрый жар / ооо феникс</span>
+                <span>Контакты:<br>Добрый жар / ооо феникс</span>
             </div>
             <div class="contacts__list-item contacts__item-address">
                     <span>
@@ -36,10 +36,10 @@
                 <span>
                        <?=$GLOBALS['phone']?>
                     </span></div>
-            <div class="contacts__list-item contacts__item-messengers desktop">
+            <div class="contacts__list-item contacts__item-messengers">
                     <span>
                         Мессенджеры:
-                    </span><br>
+                    </span>
                 <img class="contacts__messengers-items" src="/upload/src/opt/phone.png">
                 <img class="contacts__messengers-items" src="/upload/src/opt/whatsapp.png">
                 <img class="contacts__messengers-items" src="/upload/src/opt/telegram.png">

@@ -55,18 +55,18 @@
     <div class="header">
         <a class="header__logo desktop" href="/">Добрый Жар Опт</a>
         <div class="header__mobile-logo mobile">
-            <img class="header__mobile-icon" height="59" width="52" alt="Добрый Жар Лого" src="upload/src/opt/mobile_logo.png">
+            <img class="header__mobile-icon" alt="Добрый Жар Лого" src="/upload/src/opt/mobile_logo.png">
             <span class="header__mobile-logo-text">Добрый Жар</span>
-            <span class="header__mobile-logo-text--big">Опт</span>
         </div>
         <div class="header__right-container">
             <a class="header__price opt-button desktop" href="#hero-block">Получить прайс-лист</a>
             <a class="header__login opt-button desktop" href="https://b2b.dobriy-jar.ru">Вход / Регистрация</a>
-            <a class="header__phone" href="tel:<?= $GLOBALS['phone'] ?>"><?= $GLOBALS['phone'] ?></a>
+            <a class="header__phone desktop" href="tel:<?= $GLOBALS['phone'] ?>"><?= $GLOBALS['phone'] ?></a>
+            <a class="header__mobile-phone mobile" href="tel:<?= $GLOBALS['phone'] ?>"></a>
             <button class="header__callback opt-button show-tel-popup desktop">Обратный звонок</button>
         </div>
         <div class="header__burger mobile">
-            <svg viewBox="0 0 100 80" width="81" height="49" fill="white">
+            <svg viewBox="0 0 100 80" fill="white">
                 <rect width="100" height="7"></rect>
                 <rect y="37" width="100" height="7"></rect>
                 <rect y="73" width="100" height="7"></rect>

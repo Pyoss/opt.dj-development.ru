@@ -124,17 +124,86 @@
     transform-origin: top left;
 }
 
-@media (max-width: 1080px){
+@media (max-width: 1080px){.steps__container {
+    margin: 20rem auto;
+}
+
+    .steps__title {
+        font-size: 5rem;
+        margin: 5rem;
+    }
+
+    .steps__text {
+        font-size: 3rem;
+        font-weight: 300;
+    }
+
+    .steps__list {
+        margin: 8rem 8rem 5rem 2rem;
+    }
+
     .steps__list-item {
-        width: 800px;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        position: relative;
+        margin-bottom: 5rem;
+    }
+
+    .steps__list-number {
+        height: 18rem;
+        border-radius: 9rem;
+        border-top: 1rem solid var(--main-dj-color-fade);
+        border-right: 1rem solid var(--main-dj-color-fade);
+        border-left: 1rem solid var(--main-dj-color);
+        border-bottom: 1rem solid var(--main-dj-color);
+        font-size: 9rem;
+        flex: 0 0 18rem;
     }
 
     .steps__list-container {
-        flex: 2 0 0;
-        justify-content: space-between;
+        height: 18rem;
+        border-top: 1rem solid #FFFFFF;
+        border-bottom: 1rem solid #FFFFFF;
+        border-radius: 2rem;
+        margin-left: -10rem;
+        padding-left: 12rem;
+        gap: 1rem;
     }
 
     .steps__list-text {
-        flex-basis: 100%;
+        font-weight: 300;
+        font-size: 3rem;
+        line-height: unset;
+    }
+
+    .steps__list-logo {
+        width: 10rem;
+        height: 11rem;
+        border-left: .2rem solid #7F8C90;
+        background-size: 10rem;
+        flex-basis: 15rem;
+    }
+
+    .steps__list-item:after {
+        border-radius: .8rem;
+    }
+
+    .steps__list-item:nth-child(2n) .steps__list-number{
+        border-top: 1rem solid var(--main-dj-color);
+        border-right: 1rem solid var(--main-dj-color);
+        border-left: 1rem solid var(--main-dj-color-fade);
+        border-bottom: 1rem solid var(--main-dj-color-fade);
+    }
+
+
+    .steps__list-item:before {
+        height: 6rem;
+        bottom: 0;
+        width: calc(100% - 64px);
+        left: 7rem;
+        position: absolute;
+        z-index: 0;
+        border-radius: 2rem;
     }
 }

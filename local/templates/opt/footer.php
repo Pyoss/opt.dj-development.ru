@@ -1,8 +1,5 @@
 <footer>
     <div class="footer__container container desktop">
-        <div class="footer__logo">
-            <img src="/upload/src/opt/footer_logo.png" class="footer__logo">
-        </div>
         <div class="footer__menu">
             <span class="footer__menu-item">Главная</span>
             <span class="footer__menu-item">О компании</span>
@@ -18,10 +15,6 @@
                 <div class="footer__contacts-button opt-button">Вход в личный кабинет</div>
             </a>
         </div>
-    </div>
-
-    <div class="mobile-contact mobile">
-        <img class="mobile-contacts__picture" src="/upload/src/opt/email.png">
     </div>
 
     <!-- Popups --!>

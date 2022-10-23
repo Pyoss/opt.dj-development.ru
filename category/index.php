@@ -2,7 +2,7 @@
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Новая страница");?>
 
-<?$APPLICATION->IncludeComponent(
+<?/*$APPLICATION->IncludeComponent(
     "dj:dj.landing.section",
     "hero-block",
     array(
@@ -10,7 +10,7 @@ $APPLICATION->SetTitle("Новая страница");?>
         "SECTION_BACKGROUND" => "/upload/medialibrary/eb9/aw41tlum9t72570ud3rq5gkvhn8s8eb6/hero-background.png",
         "SECTION_BACKGROUND_MOBILE" => "/upload/medialibrary/eb9/aw41tlum9t72570ud3rq5gkvhn8s8eb6/hero-background.png",
         "SECTION_LOGO" => "/upload/medialibrary/0ea/sqd9c3atdi4g4x3exnysqhf658nqe42d/Логотип белый.png"
-    ));?>
+    ));*/?>
 <?$APPLICATION->IncludeComponent(
     "dj:dj.landing.category",
     ".default",
@@ -30,6 +30,26 @@ $APPLICATION->SetTitle("Новая страница");?>
     "dj:dj.landing.section",
     "opt-section",
     Array('CATEGORY_CODE' => $_GET['category'])
+);?>
+<?$APPLICATION->IncludeComponent(
+    "dj:dj.landing.section",
+    "questions",
+    array(
+        "COMPONENT_TEMPLATE" => "questions",
+        "SECTION_BACKGROUND" => "/upload/medialibrary/f06/klyqtgwcwaqs2s55bh8fz71pjdr1jetc/_Группа_.png",
+        "SECTION_BACKGROUND_MOBILE" => "/upload/medialibrary/f06/klyqtgwcwaqs2s55bh8fz71pjdr1jetc/_Группа_.png"
+    ),
+    false
+);?>
+
+<?$APPLICATION->IncludeComponent(
+    "dj:dj.landing.section",
+    "opt-catalog",
+    Array()
+);?><?$APPLICATION->IncludeComponent(
+    "dj:dj.landing.section",
+    "mobile-carousel",
+    Array()
 );?>
 <?$APPLICATION->IncludeComponent(
     "dj:dj.landing.section",

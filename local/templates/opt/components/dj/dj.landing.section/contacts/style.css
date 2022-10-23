@@ -61,20 +61,64 @@
 }
 
 @media (max-width: 1080px) {
-    .contacts-block__container{
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-items: center;
+    .contacts {
+        padding: 10rem 0;
+    }
+
+    .contacts__title {
+        font-size: 5rem;
+        font-weight: 700;
+    }
+
+    .contacts-block__container {
+        display: block;
+        margin: 5rem!important;
+        width: auto !important;
+    }
+
+    .contacts__column-contacts{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5rem 8rem;
+        line-height: 6rem;
+    }
+
+    .contacts__messengers-items {
+        width: 8rem;
+        height: 8rem;
+        margin-left: 5rem;
+    }
+
+    .contacts__item-address {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .contacts__item-messengers {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .contacts__list-item {
+        font-size: 3.5rem;
+        font-weight: 300;
+    }
+
+    .contacts__messengers-items {
+        margin-right: unset;
     }
 
     .contacts__column-map {
         background-size: contain;
-        width: 800px;
-        height: 600px;
+        width: 90rem;
+        height: 80rem;
+        margin-top: 5rem;
     }
 
+
     .contacts__column-map iframe {
-        width: 100%;
-        height: 600px;
+        width: 90rem;
+        height: 80rem;
     }
+
 }

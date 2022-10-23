@@ -60,3 +60,70 @@
     top: 400px;
 }
 
+@media (max-width: 1080px) {
+    .utp {
+        background-color: #25231F;
+    }
+
+    .utp__background {
+        height: 280rem;
+        background-size: contain;
+        /* background-position: center; */
+        /* background-repeat: no-repeat; */
+    }
+
+    .utp__container {
+        padding-top: 55px;
+        position: relative;
+    }
+
+    .utp__title {
+        text-align: center;
+        margin: 10rem 0;
+    }
+
+    .utp__feature {
+        display: block;
+        color: white;
+        font-size: 4.2rem;
+        position: absolute;
+        width: 40rem;
+    }
+
+    .utp__feature--1 {
+        top: 94rem;
+        left: 15rem;
+    }
+
+    .utp__feature--2 {
+        top: 50rem;
+        left: 52rem;
+    }
+
+    .utp__feature--3 {
+        left: 14rem;
+        top: 148rem;
+    }
+
+    .utp__feature--4 {
+        left: 52rem;
+        top: 97rem;
+    }
+
+    .utp__feature--5 {
+        left: 13rem;
+        top: 200rem;
+    }
+
+    .utp__feature--6 {
+        left: 52rem;
+        top: 161rem;
+    }
+
+    .utp__feature--7 {
+        left: 37rem;
+        top: 249rem;
+    }
+
+}
+
