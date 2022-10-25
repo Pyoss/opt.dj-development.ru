@@ -1,0 +1,27 @@
+img.mobile-utp__list-image {
+    width: 80rem;
+    height: 44.9rem;
+}
+
+.mobile-utp__list-item {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 4rem;
+}
+
+.mobile-utp__list {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 8rem;
+}
+
+.mobile-utp__list-name {
+    text-align: center;
+    /* margin-top: 4rem; */
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0 12rem;
+}

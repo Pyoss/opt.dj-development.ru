@@ -5,7 +5,7 @@
 }
 
 .price-block {
-    background-color: orange;
+    /* background-color: orange; */
     padding: 8rem 7rem 11rem 9rem;
     box-sizing: border-box;
     background-size: cover;
@@ -95,7 +95,7 @@ span.main-text__text{
 }
 
 .main-text.mobile {
-    width: 85rem;
+    width: 81rem;
     background-color: rgba(255, 255, 255, .6);
     text-align: center;
     padding: 3rem;

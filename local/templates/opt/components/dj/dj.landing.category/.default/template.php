@@ -17,7 +17,7 @@
             <div class="category__form-action">
                 Заполните форму и получите прайс-лист:
             </div>
-            <div class="category__form-inputs">
+            <div class="category__form-inputs" id="catalog-price">
                 <input type='email' class="category__form-input" placeholder="E-mail">
                 <input type='tel' class="category__form-input" placeholder="+7 123 456 78 90">
                 <button class="category__form-button opt-button get-price">Скачать прайс-лист</button>

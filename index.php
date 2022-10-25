@@ -39,6 +39,11 @@ $APPLICATION->SetTitle("Новая страница");?>
 	false
 );?>
 <?$APPLICATION->IncludeComponent(
+	"dj:dj.landing.section",
+	"mobile-utp",
+	Array()
+);?>
+<?$APPLICATION->IncludeComponent(
     "dj:dj.landing.section",
     "steps",
     Array()

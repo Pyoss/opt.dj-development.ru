@@ -24,6 +24,6 @@
                 <img class="brands-list__item" src="<?=$brand['PICTURE_PATH']?>">
             <?endforeach;?>
         </div>
-        <button class="opt-catalog__button opt-button get-price mobile">Скачать прайс</button>
+        <button class="opt-catalog__button opt-button show-price-popup mobile">Получить прайс</button>
     </div>
 </section>

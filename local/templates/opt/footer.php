@@ -1,17 +1,20 @@
 <footer>
-    <div class="footer__container container desktop">
+    <div class="footer__container container">
+        <!--
         <div class="footer__menu">
             <span class="footer__menu-item">Главная</span>
             <span class="footer__menu-item">О компании</span>
             <span class="footer__menu-item">Контакты</span>
         </div>
+        --!>
         <div class="footer__additions">
+            <img class="footer__additions-logo" src="/upload/src/opt/footer_logo.png">
             <span class="footer__additions-item">Политика конфиденциальности</span>
         </div>
         <div class="footer__contacts">
             <div class="footer__contacts-phone"><?= $GLOBALS['phone'] ?></div>
             <div class="footer__contacts-button opt-button show-tel-popup">Заказать звонок</div>
-            <a href="https://b2b.dobriy-jar.ru">
+            <a href="https://b2b.dobriy-jar.ru" class="desktop">
                 <div class="footer__contacts-button opt-button">Вход в личный кабинет</div>
             </a>
         </div>

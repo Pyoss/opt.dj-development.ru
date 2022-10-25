@@ -14,10 +14,13 @@ img.mobile-carousel__list-image {
 .mobile-carousel__main-image {
     width: 92rem;
     height: 58rem;
+    position: absolute;
+    top: 9rem;
 }
 
 .mobile-carousel__container.container {
-    padding: 9rem 4rem;
+    padding: 67rem 4rem 9rem 4rem;
     background-color: #25231f;
     box-sizing: border-box;
+    position: relative;
 }

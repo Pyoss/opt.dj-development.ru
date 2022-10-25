@@ -5,7 +5,7 @@
  * @var array $arResult
  **/
 ?>
-<section id="utp" class="utp">
+<section id="utp" class="utp desktop">
     <div class="utp__background" style="background-image: url(<?=$arResult['background_img']?>)">
         <div class="utp__container container">
             <h2 class="utp__title">

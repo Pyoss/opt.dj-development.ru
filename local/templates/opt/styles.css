@@ -91,7 +91,8 @@ div.header {
 
 .burger-menu {
     height: 560px;
-    padding: 32px 32px 32px 0;width:100%;
+    padding: 32px 32px 32px 0;
+    width:100%;
     background-color:
             white;
     z-index:200;
@@ -99,12 +100,12 @@ div.header {
             none;
     text-align: left;
     position: fixed;
-    top: 100px;
+    top: 19rem;
     left: 0;
     line-height: 70px;
     border-bottom: 1px solid black;
 }
-.burger-menu li {list-style: none;border-bottom: 1px solid grey;width: 700px;font-size: 46px;line-height: 110px;padding-left: 40px;}
+.burger-menu li {list-style: none;border-bottom: .2rem solid grey;width: 100%;font-size: 5rem;line-height: 16rem;padding-left: 6rem;}
 
 .burger-menu a {
     color: black;
@@ -130,8 +131,15 @@ footer {
 
 .footer__container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+}
+
+.footer__additions {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 20px;
 }
 
 .footer__menu {
@@ -288,6 +296,8 @@ footer {
         font-size: 5rem;
         text-transform: uppercase;
         font-weight: bolder;
+        color: white;
+        text-decoration: none;
     }
 
     .header__mobile-logo-text--big {
@@ -301,24 +311,26 @@ footer {
     }
 
     .popup-phone, .popup-price {
-        gap: 65px;
+        gap: 6rem;
+        padding: 4rem 10rem;
     }
 
     .popup-phone__text {
-        font-size: 44px;
+        font-size: 4rem;
+        text-align: center;
     }
 
     .popup-phone__input, .popup-mail__input {
-        font-size: 52px;
-        line-height: 95px;
-        border-radius: 20px;
+        line-height: 9rem;
+        border-radius: 2rem;
+        font-size: 4rem;
     }
 
     .popup-phone__button.opt-button {
-        font-size: 35px;
-        width: 640px;
-        height: 96px;
-        border-radius: 20px;
+        font-size: 3rem;
+        width: 50rem;
+        height: 10rem;
+        border-radius: 2rem;
     }
 
     .mobile-contact {
@@ -371,6 +383,62 @@ footer {
     }
 
     h2 {
-        font-size: 7rem
+        font-size: 7rem;
+        text-align: center;
+    }
+
+    footer {
+        height: 30rem;
+        padding-top: 8rem;
+    }
+
+    .footer__additions {
+        gap: 4rem;
+    }
+
+    .footer__additions-item {
+        font-size: 3rem;
+    }
+
+    .footer__additions-logo {
+        width: 32rem;
+        height: 7rem;
+    }
+
+    .footer__menu {
+        gap: 10px;
+    }
+
+    .footer__menu-item {
+        font-size: 14px;
+    }
+
+    .footer__contacts {
+        row-gap: 4rem;
+        align-items: center;
+    }
+
+    .footer__contacts-phone {
+        font-size: 4rem;
+        padding-left: 5rem;
+    }
+
+    .footer__contacts-phone:before {
+        width: 4rem;
+        height: 4rem;
+        top: .6rem;
+    }
+
+    .footer__contacts-button.opt-button {
+        font-size: 2rem;
+        height: 7rem;
+        width: 30rem
+    }
+
+    .thanks-popup {
+        padding: 4rem;
+        border-radius: 3rem;
+        font-size: 4rem;
+        box-shadow: .2rem .6rem .8rem .2rem  #00000078;
     }
 }

@@ -17,9 +17,8 @@
                 и мы проконсультируем вас </span><span class="highlight"> в рабочее время!</span>
             </div>
             <div class="questions__messengers">
-                <img class="questions__messengers-items" src="/upload/src/opt/phone.png">
-                <img class="questions__messengers-items" src="/upload/src/opt/whatsapp.png">
-                <img class="questions__messengers-items" src="/upload/src/opt/telegram.png">
+                <img class="questions__messengers-items" src="/upload/src/WHATSAPP.png">
+                <img class="questions__messengers-items" src="/upload/src/TG.png">
             </div>
             <div class="questions__text">
                 <span>Также вы можете заказать обратный звонок, и мы свяжемся с вами </span>

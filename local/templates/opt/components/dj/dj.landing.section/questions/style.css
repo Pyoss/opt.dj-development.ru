@@ -63,8 +63,8 @@
 }
 
 .questions__messengers-items {
-    width: 117px;
-    height: 117px;
+    width: 80px;
+    height: 80px;
 }
 
 @media (max-width: 1080px) {
@@ -128,12 +128,12 @@
     }
 
     .questions__messengers {
-        gap: 6rem;
+        gap: 20rem;
     }
 
     .questions__messengers-items {
-        width: 20rem;
-        height: 20rem;
+        width: 14rem;
+        height: 14rem;
     }
 
 }

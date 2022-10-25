@@ -1,17 +1,11 @@
 var burger_menu = {
     closed: true, transition: false, open: function () {
-        let burg = $(".header__burger");
-        if (burg.css('height') === '120px') {
-            burg.css({'height': '600px'})
-            burg.toggleClass('active')
+        if (burger_menu.closed) {
             $(".burger-menu").slideToggle();
             burger_menu.closed = false;
         } else {
-
-            burg.css({'height': '120px'})
             setTimeout(function () {
                 $(".burger-menu").slideToggle().promise().done(function () {
-                    burg.toggleClass('active')
                     burger_menu.closed = true;
                 })
             }, 100)
@@ -27,6 +21,10 @@ var popup_manager = {
 
         popup_manager.fading = true
         popup_manager.currentPopup.fadeOut(500)
+
+        if (!burger_menu.closed) {
+            burger_menu.open()
+        }
         setTimeout(
             function () {
                 popup_manager.fading = false
@@ -34,15 +32,19 @@ var popup_manager = {
             })
     },
 
-    showPopup: function (popup) {
+    showPopup: function (popup, position='center') {
         if (popup_manager.fading) return false;
         popup_manager.hidePopups()
-        if (!burger_menu.closed){
+        if (!burger_menu.closed) {
             burger_menu.open()
         }
         popup_manager.fading = true
         popup.fadeIn(500)
-        popup.center()
+        if (position === 'center'){
+            popup.center()
+        } else {
+            popup.onTop(position)
+        }
         setTimeout(
             function () {
                 popup_manager.fading = false
@@ -56,7 +58,7 @@ $(document).ready(function () {
 
     // Popup hide button
     $(document).click(function (e) {
-        if (popup_manager.currentPopup !== null){
+        if (popup_manager.currentPopup !== null) {
             if ($(e.target).closest('#' + popup_manager.currentPopup.attr('id')).length !== 0) return false;
         }
         popup_manager.hidePopups()
@@ -67,7 +69,7 @@ $(document).ready(function () {
             let phone = $('#' + this.dataset.phoneInput);
             if (!checkPhone(phone.val())) {
                 let error_msg = 'Введите телефон в верном формате'
-                showErrorMsg(error_msg)
+                showErrorMsg(error_msg, phone)
             } else {
                 sendMail('callback', {'phone': phone.val()})
 
@@ -90,19 +92,19 @@ $(document).ready(function () {
     )
 
     $('.get-price').click(
-        function (event){
+        function (event) {
             event.preventDefault()
-            let mail = $(this).parent().children('[type="email"]').val()
-            let phone = $(this).parent().children('[type="tel"]').val()
-            if (!(mail.includes('@'))){
+            let mail = $(this).parent().children('[type="email"]')
+            let phone = $(this).parent().children('[type="tel"]')
+            if (!(mail.val().includes('@'))) {
                 let error_msg = 'Введите email в верном формате'
-                showErrorMsg(error_msg)
-            } else if (!checkPhone(phone)){
+                showErrorMsg(error_msg, mail)
+            } else if (!checkPhone(phone.val())) {
 
                 let error_msg = 'Введите телефон в верном формате'
-                showErrorMsg(error_msg)
+                showErrorMsg(error_msg, phone)
             } else {
-                sendMail('callback', {'phone': phone})
+                sendMail('callback', {'phone': phone.val()})
             }
         }
     )
@@ -130,9 +132,9 @@ function showMobileContacts() {
     popup_manager.showPopup($('#mobile-contacts'))
 }
 
-function showErrorMsg(msg) {
+function showErrorMsg(msg, position='center') {
     $('#error-msg span').text(msg)
-    popup_manager.showPopup($('#error-msg'))
+    popup_manager.showPopup($('#error-msg'), position)
 }
 
 
@@ -147,6 +149,7 @@ function showPricePopup() {
 function formatNumber(int) {
     return int.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
 }
+
 const phoneRegexp = /^\+7[(]\d{3}[)]\d{3}-\d{2}-\d{2}$/
 
 function checkPhone(phone) {
@@ -163,6 +166,30 @@ $.fn.center = function () {
 
         this.css("top", 0);
     }
-    this.css("left", ($(window).width() / 2 - this.width() / 2) + "px");
+    this.css("left", ($(window).width() / 2 - this.outerWidth()/ 2) + "px");
+    console.log(this.width())
+    console.log($(window).width())
+    return this;
+}
+
+$.fn.under = function (jq) {
+    this.css("position", "absolute");
+    this.css('box-sizing', 'border-box')
+    this.css('width', jq.width() + 'px')
+    let top = jq.offset().top + jq.outerHeight()
+    let left = jq.offset().left
+    this.css("left", left + "px");
+    this.css("top", top + "px");
+    return this;
+}
+
+$.fn.onTop = function (jq) {
+    this.css("position", "absolute");
+    this.css('box-sizing', 'border-box')
+    this.css('width', jq.outerWidth() + 'px')
+    let top = jq.offset().top - this.outerHeight()
+    let left = jq.offset().left
+    this.css("left", left + "px");
+    this.css("top", top + "px");
     return this;
 }

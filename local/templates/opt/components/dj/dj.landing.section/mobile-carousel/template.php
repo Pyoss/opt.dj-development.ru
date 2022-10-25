@@ -7,7 +7,8 @@
 ?>
 <section id="mobile-carousel" class="mobile-carousel mobile">
     <div class="mobile-carousel__container container">
-        <img
+        <img loading="lazy"
+             onload="$(this).fadeIn()"
              class="mobile-carousel__main-image"
              src="<?= $arResult['ELEMENTS'][0]['DETAIL_PICTURE_PATH'] ?>">
         <div class="mobile-carousel__list">

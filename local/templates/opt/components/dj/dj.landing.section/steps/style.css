@@ -129,8 +129,8 @@
 }
 
     .steps__title {
-        font-size: 5rem;
-        margin: 5rem;
+        font-size: 7rem;
+        margin: 10rem 5rem 5rem 5rem;
     }
 
     .steps__text {
@@ -172,9 +172,10 @@
     }
 
     .steps__list-text {
-        font-weight: 300;
+        font-weight: 400;
         font-size: 3rem;
         line-height: unset;
+        text-transform: uppercase;
     }
 
     .steps__list-logo {

@@ -55,9 +55,10 @@
     <div class="header">
         <a class="header__logo desktop" href="/">Добрый Жар Опт</a>
         <div class="header__mobile-logo mobile">
-            <img class="header__mobile-icon" alt="Добрый Жар Лого" src="/upload/src/opt/mobile_logo.png">
-            <span class="header__mobile-logo-text">Добрый Жар</span>
+            <a href="/"><img class="header__mobile-icon" alt="Добрый Жар Лого" src="/upload/src/opt/mobile_logo.png">
+            </a><a href="/" class="header__mobile-logo-text">Добрый Жар</a>
         </div>
+
         <div class="header__right-container">
             <a class="header__price opt-button desktop" href="#hero-block">Получить прайс-лист</a>
             <a class="header__login opt-button desktop" href="https://b2b.dobriy-jar.ru">Вход / Регистрация</a>
@@ -76,6 +77,7 @@
             <ul>
                 <li><a href="#" class="show-price-popup">Получить прайс-лист</a></li>
                 <li><a href="#" class="show-tel-popup">Обратный звонок</a></li>
+                <li><a href="https://b2b.dobriy-jar.ru">Личный кабинет</a></li>
             </ul
         </div>
     </div>
