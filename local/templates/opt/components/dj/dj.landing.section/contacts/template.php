@@ -40,9 +40,9 @@
                     <span>
                         Мессенджеры:
                     </span>
-                <img class="contacts__messengers-items" src="/upload/src/opt/phone.png">
-                <img class="contacts__messengers-items" src="/upload/src/opt/whatsapp.png">
-                <img class="contacts__messengers-items" src="/upload/src/opt/telegram.png">
+                <img class="contacts__messengers-items mobile" src="/upload/src/opt/phone.png">
+                <img class="contacts__messengers-items" src="/upload/src/opt/whatsapp_ios.png">
+                <img class="contacts__messengers-items" src="/upload/src/opt/tg_ios.png">
             </div>
         </div>
 
