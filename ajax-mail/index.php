@@ -49,7 +49,7 @@ if ($_POST['template'] === 'callback') {
     if ($city){
         $message .= "\r\nГород: " . $city;
     }
-    mail('igork@dobriy-jar.ru', 'Получение Прайса Опт', $message);
+    mail('opt@dobriy-jar.ru', 'Получение Прайса Опт', $message);
     $bx->createCallbackLead($_POST['phone'], 'Заявка на получение прайса опт', 'Заявка на получение прайса опт',
         $_POST['name'] ,$_POST['email'], $city);
 }
