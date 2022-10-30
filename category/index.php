@@ -18,16 +18,6 @@ $APPLICATION->SetTitle("Новая страница");?>
 );?>
 <?$APPLICATION->IncludeComponent(
     "dj:dj.landing.section",
-    "why_us",
-    Array()
-);?>
-<?$APPLICATION->IncludeComponent(
-    "dj:dj.landing.section",
-    "audience",
-    Array()
-);?>
-<?$APPLICATION->IncludeComponent(
-    "dj:dj.landing.section",
     "opt-section",
     Array('CATEGORY_CODE' => $_GET['category'])
 );?>
@@ -45,6 +35,16 @@ $APPLICATION->SetTitle("Новая страница");?>
 <?$APPLICATION->IncludeComponent(
     "dj:dj.landing.section",
     "opt-catalog",
+    Array()
+);?>
+<?$APPLICATION->IncludeComponent(
+    "dj:dj.landing.section",
+    "why_us",
+    Array()
+);?>
+<?$APPLICATION->IncludeComponent(
+    "dj:dj.landing.section",
+    "audience",
     Array()
 );?><?$APPLICATION->IncludeComponent(
     "dj:dj.landing.section",

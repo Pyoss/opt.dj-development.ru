@@ -16,7 +16,7 @@
 
 .category__text{
     grid-column-start: 2;
-    margin-top: 60px;
+    /* margin-top: 60px; */
 }
 
 .category__image {
@@ -38,7 +38,7 @@
 }
 
 .category__form-action {
-    font-weight: 800;
+    font-weight: 600;
     font-size: 16px;
 }
 

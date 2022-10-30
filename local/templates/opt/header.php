@@ -3,6 +3,9 @@
 <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
     <title><?= $APPLICATION->ShowTitle() ?></title>
 
 
@@ -25,7 +28,9 @@
 
     use Bitrix\Main\Page\Asset;
 
-    $GLOBALS['phone'] = '89296052405';
+    $GLOBALS['phone'] = '8 (800) 600-46-28';
+    $GLOBALS['tg_ref']  = "https://t.me/Dj_opt";
+    $GLOBALS['whatsapp_ref']  = "https://api.whatsapp.com/send?phone=89057243425";
     $APPLICATION->ShowHead();
     ?>
     <link rel="icon" href="<?= SITE_TEMPLATE_PATH ?>/favicon.ico?v=2" type="image/x-icon">
@@ -53,10 +58,10 @@
     ?>
 
     <div class="header">
-        <a class="header__logo desktop" href="/">Добрый Жар Опт</a>
-        <div class="header__mobile-logo mobile">
-            <a href="/"><img class="header__mobile-icon" alt="Добрый Жар Лого" src="/upload/src/opt/mobile_logo.png">
-            </a><a href="/" class="header__mobile-logo-text">Добрый Жар</a>
+        <!--<a class="header__logo desktop" href="/">Добрый Жар Опт</a>--!>
+        <div class="header__mobile-logo">
+            <a href="/"><img class="header__mobile-icon" alt="Добрый Жар Лого" src="https://www.dobriy-jar.ru/upload/images/svg/logo.svg">
+                <!--</a><a href="/" class="header__mobile-logo-text">Добрый Жар</a>--!>
         </div>
 
         <div class="header__right-container">
@@ -75,9 +80,11 @@
         </div>
         <div class="burger-menu">
             <ul>
+                <li><a href="tel:<?= $GLOBALS['phone'] ?>"><?= $GLOBALS['phone'] ?></a></li>
                 <li><a href="#" class="show-price-popup">Получить прайс-лист</a></li>
                 <li><a href="#" class="show-tel-popup">Обратный звонок</a></li>
-                <li><a href="https://b2b.dobriy-jar.ru">Личный кабинет</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+                <li><a href="https://www.dobriy-jar.ru">Розничный сайт</a></li>
             </ul
         </div>
     </div>

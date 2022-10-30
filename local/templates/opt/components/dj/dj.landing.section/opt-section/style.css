@@ -47,6 +47,7 @@
 
 .opt-section__image img{
     max-height: 500px;
+    max-width: 100%;
 }
 
 .opt-section__image {

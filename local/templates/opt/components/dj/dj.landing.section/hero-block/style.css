@@ -1,14 +1,14 @@
 section#hero-block {
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 30px 0 80px 0;
+    padding: 50px 0 80px 0;
     position: relative;
     overflow: hidden;
 }
 
 .main-callback {
     width: 400px;
-    background: rgba(205, 201, 201, 0.46);
+    background: rgba(205, 201, 201, 1);
     border-radius: 12px;
     display: flex;
     flex-direction: column;
@@ -17,8 +17,11 @@ section#hero-block {
     gap: 30px;
     text-align: center;
     box-sizing: border-box;
+    color: black;
+    font-weight: 500;
     position: relative;
     z-index: 1;
+    font-size: 22px;
 }
 
 .hero-block__container {
@@ -34,17 +37,17 @@ section#hero-block {
     align-items: center;
     padding: 30px 25px;
     gap: 18px;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.6);
     border-radius: 12px;
 }
 
 .main-callback__input {
     box-sizing: border-box;
-    border: 2px solid var(--main-dj-color);;
+    border: 2px solid var(--main-dj-color);
     border-radius: 10px;
     width: 280px;
-    height: 60px;
-    color: white;
+    height: 37px;
+    color: black;
     background-color: transparent;
     text-align: center;
     font-size: 22px;
@@ -64,6 +67,12 @@ section#hero-block {
     background-color: var(--main-dj-color);;
     font-size: 15px;
     font-weight: 700;
+}
+
+.main-callback__list {
+    text-align: left;
+    list-style: square;
+    padding-left: 50px;
 }
 
 #hero-video {

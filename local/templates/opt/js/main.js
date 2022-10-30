@@ -94,6 +94,7 @@ $(document).ready(function () {
     $('.get-price').click(
         function (event) {
             event.preventDefault()
+            let name = $(this).parent().children('[type="text"]')
             let mail = $(this).parent().children('[type="email"]')
             let phone = $(this).parent().children('[type="tel"]')
             if (!(mail.val().includes('@'))) {
@@ -104,7 +105,7 @@ $(document).ready(function () {
                 let error_msg = 'Введите телефон в верном формате'
                 showErrorMsg(error_msg, phone)
             } else {
-                sendMail('callback', {'phone': phone.val()})
+                sendMail('price', {'phone': phone.val(), 'email': mail.val(), 'name': name.val()})
             }
         }
     )

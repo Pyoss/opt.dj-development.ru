@@ -19,7 +19,7 @@
     position:absolute;
     max-height: 150px;
     bottom: 20px;
-    right: 20px;
+    right: 11px;
 }
 
 .catalog-list__item-name {
@@ -30,14 +30,14 @@
     display: block;
     z-index: 1;
     position: absolute;
-    width: 180px;
+    width: 170px;
     bottom: 15px;
     color: black;
 }
 
 .catalog-list__item {
     position: relative;
-    padding: 15px 25px;
+    padding: 15px 10px;
     background: #CDC9C9;
     width: 337px;
     height: 192px;
@@ -48,7 +48,7 @@
     content: " ";
     display: block;
     position: absolute;
-    right: 20px;
+    right: 9px;
     bottom: 17px;
     background-color: white;
     height: 160px;
@@ -170,6 +170,4 @@
         padding: 2rem 0;
         font-size: 4rem;
     }
-
-
 }

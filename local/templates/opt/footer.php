@@ -35,7 +35,8 @@
     </div>
     <div class="popup-price" id="price-popup" style="display:none;">
         <span class="popup-phone__text">Оставьте ваши контакты</span>
-        <input type="email" class="popup-mail__input mail" id='price-tel-input' placeholder="email@mail.ru">
+        <input type="text" class="popup-mail__input name" id='price-name-input'>
+        <input type="email" class="popup-mail__input mail" id='price-mail-input' placeholder="email@mail.ru">
         <input type="tel" class="popup-phone__input tel tel-mask" id='price-phone-input'
                placeholder="+7 (000) 000-00-00">
         <button class="popup-phone__button opt-button get-price" data-phone-input='price-phone-input'

@@ -22,6 +22,7 @@
                 <input type='tel' class="category__form-input" placeholder="+7 123 456 78 90">
                 <button class="category__form-button opt-button get-price">Скачать прайс-лист</button>
             </div>
+            <!--
             <div class="category__form-comments">
                 <span>Нужна помощь?</span>
                 <span>Позвоните нам <?=$GLOBALS['phone']?></span>
@@ -29,6 +30,7 @@
                 <img src="/upload/src/opt/phone.png">
                 <img src="/upload/src/opt/telegram.png">
             </div>
+            --!>
         </div>
     </div>
 </section>

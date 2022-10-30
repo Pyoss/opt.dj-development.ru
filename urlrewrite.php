@@ -6,7 +6,7 @@ $arUrlRewrite = array(
         ),
     1 =>
         array(
-            'CONDITION' => '#^/category/(.+)/#',
+            'CONDITION' => '#^/category/(.+)/.*#',
             'RULE' => 'category=$1',
             'ID' => 'dj:opt-category',
             'PATH' => '/category/index.php',
